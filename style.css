@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/* —— Reset y base —— */
+:root {
+  --color-bg: #F8F4EC;
+  --color-card: #EDEAE3;
+  --color-primary: #BAC4C1;
+  --color-secondary: #A8B6A6;
+  --color-text: #333333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +15,11 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.6;
 }
 
-/* —— Navbar fija —— */
 .navbar {
   width: 100%;
   padding: 1rem 2rem;
@@ -21,29 +27,31 @@ body {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  background: #ffffff;
+  background: var(--color-card);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   z-index: 100;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
 }
-.nav-list, .social-list {
+.nav-list,
+.social-list {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
-.nav-list a, .social-list a {
+.nav-list a,
+.social-list a {
   text-decoration: none;
-  color: #000;
+  color: var(--color-text);
   font-weight: 700;
   font-size: 0.9rem;
 }
-.nav-list a:hover, .social-list a:hover {
+.nav-list a:hover,
+.social-list a:hover {
   opacity: 0.7;
 }
 
-/* —— Hero fullscreen (fondo blanco) —— */
 .hero {
   height: 100vh;
-  background-color: #ffffff;
+  background-color: var(--color-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,64 +65,59 @@ body {
 .hero-text p {
   margin-top: 0.5rem;
   font-size: 1.2rem;
-  color: #555;
+  color: var(--color-text);
 }
 
-/* —— Contenedor principal —— */
 .container {
   max-width: 900px;
   margin: auto;
-  padding: 6rem 1rem 2rem; /* deja espacio para navbar y hero */
+  padding: 6rem 1rem 2rem;
 }
 
-/* —— Bloques de contenido —— */
 .bienvenida {
-  background: #f9f9f9;
+  background: var(--color-card);
   padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 2rem;
 }
 .versiculo {
   padding: 1.5rem;
-  border-left: 5px solid #000;
+  border-left: 5px solid var(--color-primary);
   margin-bottom: 2rem;
 }
 blockquote {
   font-style: italic;
-  color: #333;
   margin-top: 0.5rem;
 }
 
-/* —— Galería de botones —— */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
   margin-bottom: 2rem;
 }
 .gallery li a {
   display: block;
   padding: 1rem;
-  background: #f4f4f4;
+  background: var(--color-card);
   border-radius: 6px;
   text-align: center;
-  color: #000;
+  color: var(--color-text);
   font-weight: 700;
   text-decoration: none;
   transition: background 0.2s ease;
 }
 .gallery li a:hover {
-  background: #e0e0e0;
+  background: var(--color-secondary);
 }
 
-/* —— Sección de contacto —— */
 .contacto {
   margin-top: 2rem;
 }
 .contacto a {
-  color: #000;
+  color: var(--color-text);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
 }
 .contacto a:hover {
   text-decoration: underline;
