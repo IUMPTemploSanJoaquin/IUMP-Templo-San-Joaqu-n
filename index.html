@@ -8,23 +8,41 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <h1>Nuestras Reuniones – IUMP Templo San Joaquín</h1>
+  <!-- Navegación superior -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="#main">Main</a></li>
+      <li><a href="#illustration">Acerca</a></li>
+      <li><a href="#reuniones">Reuniones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <ul class="social-list">
+      <li><a href="https://instagram.com" aria-label="Instagram">IG</a></li>
+      <li><a href="https://twitter.com" aria-label="Twitter">TW</a></li>
+      <li><a href="https://behance.net" aria-label="Behance">BE</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero fullscreen -->
+  <header id="main" class="hero">
+    <div class="hero-text">
+      <h1>Nuestras Reuniones</h1>
+      <p>IUMP Templo San Joaquín</p>
+    </div>
   </header>
 
   <main class="container">
-    <section class="bienvenida">
+    <!-- Introducción / Acerca -->
+    <section id="illustration" class="bienvenida">
       <h2>👋 Bienvenido/a</h2>
       <p>
         Aquí podrás acceder a cada una de nuestras reuniones semanales.<br>
-        Este espacio fue creado no solo para facilitar tu conexión, sino para acompañarte en tu caminar con Dios, donde sea que estés.
+        Este espacio fue creado no solo para facilitar tu conexión, sino para acompañarte en tu caminar con Dios.
       </p>
-      <p>
-        Nuestra esperanza es que, al reunirnos, sigamos creciendo juntos en fe, amor y comunión.<br>
-        <strong>¡Que Dios te bendiga!</strong>
-      </p>
+      <p><strong>¡Que Dios te bendiga!</strong></p>
     </section>
 
+    <!-- Versículo -->
     <section class="versiculo">
       <h3>✨ Versículo de la Semana</h3>
       <blockquote>
@@ -33,57 +51,29 @@
       </blockquote>
     </section>
 
-    <section class="reuniones">
+    <!-- Reuniones / Galería -->
+    <section id="reuniones" class="reuniones">
       <h2>📅 Reuniones semanales</h2>
       <p>Haz clic para unirte directamente por Zoom:</p>
 
-      <ul>
-        <li>
-          <a href="https://us02web.zoom.us/j/87525226787?pwd=UWZtQ25MZjBobXh6UWJyTVN4TjFOZz09" target="_blank">
-            Lunes – Oración
-          </a>
-        </li>
-        <li>
-          <a href="https://us02web.zoom.us/j/89921924848?pwd=Um5RRlV2V21ENzljN21oYi9kcUFjQT09" target="_blank">
-            Martes – Reunión General
-          </a>
-        </li>
-        <li>
-          <a href="https://us02web.zoom.us/j/84632366924?pwd=RWkrNHp5VXNtWWJPaTZTUGV3aUZFdz09" target="_blank">
-            Miércoles – Dorcas
-          </a>
-        </li>
-        <li>
-          <a href="https://us02web.zoom.us/j/87525226787?pwd=UWZtQ25MZjBobXh6UWJyTVN4TjFOZz09" target="_blank">
-            Miércoles – Oración
-          </a>
-        </li>
-        <li>
-          <a href="https://us02web.zoom.us/j/88934718424?pwd=eGtSVldBTzlsVmd2WW1lalBodCtqZz09" target="_blank">
-            Jueves – Reunión General
-          </a>
-        </li>
-        <li>
-          <a href="https://us02web.zoom.us/j/87525226787?pwd=UWZtQ25MZjBobXh6UWJyTVN4TjFOZz09" target="_blank">
-            Viernes – Oración
-          </a>
-        </li>
-        <li>
-          <a href="https://us02web.zoom.us/j/87525226787?pwd=UWZtQ25MZjBobXh6UWJyTVN4TjFOZz09" target="_blank">
-            Sábado – Oración
-          </a>
-        </li>
-        <li>
-          <a href="https://us02web.zoom.us/j/87208104445?pwd=NE0zKzZzUUM1YlppK1pNVk1iMmtiUT09" target="_blank">
-            Domingo – Escuela Dominical
-          </a>
-        </li>
-        <li>
-          <a href="https://us02web.zoom.us/j/88588454897?pwd=cFlLUGpZM0gzUVQ5QnJEQVpxSyt4Zz09" target="_blank">
-            Domingo – Reunión General
-          </a>
-        </li>
+      <ul class="gallery">
+        <li><a href="https://us02web.zoom.us/j/87525226787?pwd=UWZtQ25MZjBobXh6UWJyTVN4TjFOZz09" target="_blank">Lunes – Oración</a></li>
+        <li><a href="https://us02web.zoom.us/j/89921924848?pwd=Um5RRlV2V21ENzljN21oYi9kcUFjQT09" target="_blank">Martes – Reunión General</a></li>
+        <li><a href="https://us02web.zoom.us/j/84632366924?pwd=RWkrNHp5VXNtWWJPaTZTUGV3aUZFdz09" target="_blank">Miércoles – Dorcas</a></li>
+        <li><a href="https://us02web.zoom.us/j/87525226787?pwd=UWZtQ25MZjBobXh6UWJyTVN4TjFOZz09" target="_blank">Miércoles – Oración</a></li>
+        <li><a href="https://us02web.zoom.us/j/88934718424?pwd=eGtSVldBTzlsVmd2WW1lalBodCtqZz09" target="_blank">Jueves – Reunión General</a></li>
+        <li><a href="https://us02web.zoom.us/j/87525226787?pwd=UWZtQ25MZjBobXh6UWJyTVN4TjFOZz09" target="_blank">Viernes – Oración</a></li>
+        <li><a href="https://us02web.zoom.us/j/87525226787?pwd=UWZtQ25MZjBobXh6UWJyTVN4TjFOZz09" target="_blank">Sábado – Oración</a></li>
+        <li><a href="https://us02web.zoom.us/j/87208104445?pwd=NE0zKzZzUUM1YlppK1pNVk1iMmtiUT09" target="_blank">Domingo – Escuela Dominical</a></li>
+        <li><a href="https://us02web.zoom.us/j/88588454897?pwd=cFlLUGpZM0gzUVQ5QnJEQVpxSyt4Zz09" target="_blank">Domingo – Reunión General</a></li>
       </ul>
+    </section>
+
+    <!-- Pie de página / Contacto -->
+    <section id="contacto" class="contacto">
+      <h3>📧 Contáctanos</h3>
+      <p>¿Tienes dudas o comentarios? Escríbenos a:</p>
+      <p><a href="mailto:samanthamashillustration@gmail.com">temploiumpsanjoaquin@gmail.com</a></p>
     </section>
   </main>
 </body>

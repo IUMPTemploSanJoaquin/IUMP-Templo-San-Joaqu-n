@@ -1,75 +1,114 @@
 /* Reset y base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  margin: 0;
   font-family: system-ui, sans-serif;
-  background-color: #1e1e1e;
-  color: #f4f4f4;
+  background-color: #fff;
+  color: #000;
   line-height: 1.6;
 }
 
-/* Imagen superior estilo Notion */
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background: rgba(255,255,255,0.9);
+  z-index: 100;
+}
+.nav-list, .social-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-list a, .social-list a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.nav-list a:hover, .social-list a:hover {
+  opacity: 0.7;
+}
+
+/* Hero fullscreen */
 .hero {
+  height: 100vh;
   background-image: url('banner.jpg');
   background-size: cover;
   background-position: center;
-  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  color: white;
-  text-shadow: 1px 1px 3px #000;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+}
+.hero-text p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 /* Contenedor principal */
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
-  padding: 20px;
+  padding: 6rem 1rem 2rem; /* deja espacio por la navbar y hero */
 }
 
 /* Bloques */
-.bienvenida {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+.bienvenida, .versiculo, .contacto {
+  margin-bottom: 2rem;
 }
-
-.versiculo {
-  background-color: #222;
-  padding: 20px;
-  border-left: 5px solid #ffc107;
-  margin-bottom: 20px;
+.bienvenida h2, .versiculo h3, .contacto h3 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.bienvenida {
+  background: #f4f4f4;
+  padding: 1.5rem;
   border-radius: 8px;
 }
-
+.versiculo {
+  padding: 1.5rem;
+  border-left: 5px solid #222;
+}
 blockquote {
   font-style: italic;
-  color: #ddd;
-  margin: 0;
+  margin-top: 0.5rem;
 }
 
-/* Lista de reuniones */
-.reuniones ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Galería / Reuniones */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  gap: 1rem;
 }
-
-.reuniones li {
-  margin-bottom: 10px;
-}
-
-.reuniones a {
+.gallery li a {
   display: block;
-  background-color: #ffc107;
-  color: #000;
-  text-decoration: none;
-  padding: 12px;
-  border-radius: 8px;
-  font-weight: bold;
+  padding: 1rem;
+  background: #f4f4f4;
+  border-radius: 6px;
   text-align: center;
-  transition: background 0.2s ease;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.gallery li a:hover {
+  background: #e0e0e0;
 }
 
-.reuniones a:hover {
-  background-color: #e0a800;
+/* Contacto final */
+.contacto a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contacto a:hover {
+  text-decoration: underline;
 }
